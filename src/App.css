@@ -1,25 +1,79 @@
 .container {
-  max-width: 900px;   /* keeps grid centered and not too wide */
-  margin: 32px auto;  /* centers it horizontally */
+  max-width: 1000px;       /* slightly wider so 3 cards fit nicely */
+  margin: 32px auto;       /* centers it */
   padding: 0 16px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* always 3 per row on desktop */
-  gap: 20px;
-  justify-items: center; /* center the cards in each cell */
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row on desktop */
+  gap: 180px;
+  justify-items: center;
 }
 
-/* make it responsive */
 @media (max-width: 900px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablet */
   }
 }
 
 @media (max-width: 600px) {
   .grid {
-    grid-template-columns: 1fr; /* 1 card per row on mobile */
+    grid-template-columns: 1fr; /* 1 per row on mobile */
   }
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;        /* fixed card width */
+  height: 360px;           /* fixed card height for uniformity */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;           /* all images same height */
+  object-fit: cover;       
+}
+
+.card-body {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body h3 {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.card-body p {
+  flex-grow: 1;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.card-body a,
+.card-body .subtle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+.subtle {
+  color: #888;
 }

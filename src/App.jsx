@@ -4,118 +4,119 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1>Code Learning Resources</h1>
-        <p>12 useful platforms to practice, reference, and grow your coding skills</p>
+        <h1>What Helped Me Succeed in CS</h1>
+        <p>resources, communities, and habits that moved the needle</p>
       </header>
 
       <main className="container">
         <section className="grid">
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/freecodecamp/400/240" alt="freeCodeCamp" />
+            {/* Use the image from public/ with a root-relative path. Files in public are served at '/'. */}
+            <img className="card-img" src="/colorstack.jpeg" alt="ColorStack logo" title="ColorStack" />
             <div className="card-body">
-              <h3>freeCodeCamp</h3>
-              <p>Hands-on coding challenges and projects, all free.</p>
-              <a href="https://www.freecodecamp.org/" target="_blank">Visit</a>
+              <h3>ColorStack</h3>
+              <p>Community, mentorship, and opportunities for Black & Latinx CS students.</p>
+              <a href="https://www.colorstack.org/about-us" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/khan/400/240" alt="Khan Academy" />
+            <img className="card-img" src="/codepath.jpeg" alt="codepath" />
             <div className="card-body">
-              <h3>Khan Academy</h3>
-              <p>Interactive lessons in JavaScript, HTML/CSS, and SQL.</p>
-              <a href="https://www.khanacademy.org/computing" target="_blank">Visit</a>
+              <h3>CodePath</h3>
+              <p>Industry-taught courses and interview prep that level up your skills.</p>
+              <a href="https://www.codepath.org/about" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/coursera/400/240" alt="Coursera" />
+            <img className="card-img" src="/nsbe.png" alt="Coursera" />
             <div className="card-body">
-              <h3>Coursera</h3>
-              <p>Courses from top universities, free to audit.</p>
-              <a href="https://www.coursera.org/" target="_blank">Visit</a>
+              <h3>NSBE</h3>
+              <p>Leadership, conferences, and a strong support network for engineers.</p>
+              <a href="https://nsbe.org/" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/grasshopper/400/240" alt="Grasshopper" />
+            <img className="card-img" src="/leetcode.png" alt="Grasshopper" />
             <div className="card-body">
-              <h3>Grasshopper</h3>
-              <p>Google’s fun mobile app for learning coding basics.</p>
-              <a href="https://grasshopper.app/" target="_blank">Visit</a>
+              <h3>LeetCode</h3>
+              <p>Daily problem-solving reps that sharpened my DSA fundamentals.</p>
+              <a href="https://leetcode.com/problemset/all-code-essentials/" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/edx/400/240" alt="edX" />
+            <img className="card-img" src="/peer-study.jpg" alt="edX" />
             <div className="card-body">
-              <h3>edX</h3>
+              <h3>Peer Study Groups</h3>
               <p>Harvard’s CS50 and other top computer science courses.</p>
-              <a href="https://www.edx.org/" target="_blank">Visit</a>
+              <a href="https://info.lse.ac.uk/staff/divisions/Teaching-and-Learning-Centre/Assets/Documents/Quick-Guides/PeerStudy-HoDs-HardCopy-Final2.pdf" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/codecademy/400/240" alt="Codecademy" />
+            <img className="card-img" src="/hackathon.jpg" alt="Codecademy" />
             <div className="card-body">
-              <h3>Codecademy</h3>
-              <p>Interactive coding paths for web, data, and more.</p>
+              <h3>Hackathons & Projects</h3>
+              <p>Hands-on builds to apply concepts and talk about in interviews.</p>
               <a href="https://www.codecademy.com/" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/udemy/400/240" alt="Udemy" />
+            <img className="card-img" src="/resume.jpg" alt="resume" />
             <div className="card-body">
-              <h3>Udemy</h3>
-              <p>Affordable coding courses taught by industry pros.</p>
-              <a href="https://www.udemy.com/courses/development/" target="_blank">Visit</a>
+              <h3>Resume Reviews</h3>
+              <p>Iterating with peers, mentors, and career centers for a crisp story.</p>
+              <a href="https://www.overleaf.com/gallery/tagged/cv" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/brilliant/400/240" alt="Brilliant.org" />
+            <img className="card-img" src="/linkedin.jpg" alt="linkedin" />
             <div className="card-body">
-              <h3>Brilliant.org</h3>
-              <p>Interactive lessons in logic, math, and computer science.</p>
-              <a href="https://brilliant.org/" target="_blank">Visit</a>
+              <h3>LinkedIn Networking</h3>
+              <p>Alumni, recruiters, and communities—informational chats cold apps.</p>
+              <a href="https://www.linkedin.com/" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/w3schools/400/240" alt="W3Schools" />
+            <img className="card-img" src="/career-fairs.png" alt="careerfairs" />
             <div className="card-body">
-              <h3>W3Schools</h3>
-              <p>Quick references and tutorials for web development.</p>
-              <a href="https://www.w3schools.com/" target="_blank">Visit</a>
+              <h3>Career Fairs & Conferences</h3>
+              <p>Real conversations, tailored pitches, and follow-ups that convert.</p>
+              <a href="https://www.indeed.com/career-advice/finding-a-job/what-to-do-at-a-career-fair" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/mdn/400/240" alt="MDN Web Docs" />
+            <img className="card-img" src="/mentoring.jpeg" alt="MDN Web Docs" />
             <div className="card-body">
-              <h3>MDN Web Docs</h3>
-              <p>Official documentation for HTML, CSS, JavaScript, and APIs.</p>
-              <a href="https://developer.mozilla.org/" target="_blank">Visit</a>
+              <h3>Mentorship</h3>
+              <p>Guidance from seniors, pros, and professors—shortcuts to wisdom.</p>
+              <a href="https://en.wikipedia.org/wiki/Mentorship" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/stack/400/240" alt="Stack Overflow" />
+            <img className="card-img" src="/time-management.png" alt="Stack Overflow" />
             <div className="card-body">
-              <h3>Stack Overflow</h3>
-              <p>Q&A community for programmers with millions of answers.</p>
-              <a href="https://stackoverflow.com/" target="_blank">Visit</a>
+              <h3>Consistency & Time Management</h3>
+              <p>Protected focus blocks, weekly goals, and systems over motivation.</p>
+              <a href="https://www.linkedin.com/pulse/consistency-key-time-management-janet-janssen" target="_blank">Visit</a>
             </div>
           </article>
 
           <article className="card">
-            <img className="card-img" src="https://picsum.photos/seed/github/400/240" alt="GitHub" />
+            <img className="card-img" src="/reflection.jpg" alt="GitHub" />
             <div className="card-body">
-              <h3>GitHub</h3>
-              <p>Host code, collaborate on projects, and explore open source.</p>
-              <a href="https://github.com/" target="_blank">Visit</a>
+              <h3>Reflection & Documentation</h3>
+              <p>Journaling learnings to track progress and reinforce concepts.</p>
+              <a href="https://uark.pressbooks.pub/eportolio/chapter/reflective-expression/" target="_blank">Visit</a>
             </div>
           </article>
 
